@@ -1,0 +1,120 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 1000px;
+            margin:auto;
+        }
+        .auto-style2 {
+            width: 180px;
+        }
+        .auto-style3 {
+            width: 5px;
+        }
+        .auto-style4 {
+            width: 180px;
+            height: 22px;
+        }
+        .auto-style5 {
+            width: 5px;
+            height: 22px;
+        }
+        .auto-style6 {
+            height: 22px;
+        }
+        .auto-style7 {
+            width: 180px;
+            height: 28px;
+        }
+        .auto-style8 {
+            width: 5px;
+            height: 28px;
+        }
+        .auto-style9 {
+            height: 28px;
+        }
+    </style>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    </div>
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style4"></td>
+                <td class="auto-style5"></td>
+                <td class="auto-style6">Budynki inteligentne</td>
+                <td class="auto-style5"></td>
+                <td class="auto-style4">Login</td>
+            </tr>
+            <tr>
+                <td class="auto-style7"></td>
+                <td class="auto-style8"></td>
+                <td class="auto-style9">
+        
+            <asp:Menu ID="Menu1" runat="server" BackColor="#F7F6F3" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#7C6F57" OnMenuItemClick="Menu1_MenuItemClick1" Orientation="Horizontal" StaticSubMenuIndent="10px" >
+                <DynamicHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <DynamicMenuStyle BackColor="#F7F6F3" />
+                <DynamicSelectedStyle BackColor="#5D7B9D" />
+                <Items>
+                    <asp:MenuItem Text="HOME" Value="HOME"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/biurowe.aspx" Text="BIUROWE" Value="BIUROWE">
+                        <asp:MenuItem NavigateUrl="~/biuroweKlima.aspx" Text="KLIMATYZACJA" Value="KLIMATYZACJA"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/biuroweAlarm.aspx" Text="ALARMY" Value="ALARMY"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/biurowePpoz.aspx" Text="P-POZ" Value="P-POZ"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/kontakt.aspx" Text="KONTAKT" Value="KONTAKT"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/jednorodzinne.aspx" Text="JEDNORODZINNE" Value="JEDNORODZINNE"></asp:MenuItem>
+                </Items>
+                <StaticHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <StaticSelectedStyle BackColor="#5D7B9D" />
+            </asp:Menu>
+        
+                </td>
+                <td class="auto-style8"></td>
+                <td class="auto-style7"></td>
+            </tr>
+            <tr>
+                <td class="auto-style2">Menu</td>
+                <td class="auto-style3">&nbsp;</td>
+                <td>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style2">Reklama</td>
+            </tr>
+            <tr>
+                <td class="auto-style4">
+                    <asp:Menu ID="Menu2" runat="server">
+                    </asp:Menu>
+                </td>
+                <td class="auto-style5"></td>
+                <td class="auto-style6"></td>
+                <td class="auto-style5"></td>
+                <td class="auto-style4"></td>
+            </tr>
+            <tr>
+                <td class="auto-style2">&nbsp;</td>
+                <td class="auto-style3">&nbsp;</td>
+                <td>webMaster</td>
+                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style2">&nbsp;</td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

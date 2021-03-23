@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/Default.aspx" title="HOME"  description="">
+    <siteMapNode url="~/jednorodzinne.aspx" title="JEDNORODZINNE"  description="" />
+    <siteMapNode url="~/biurowe.aspx" title="BIUROWE"  description="" >
+		<siteMapNode url="~/biuroweAlarm.aspx" title="SYSTEMY ALARMOWE"  description="" />
+		<siteMapNode url="~/biurowePpoz.aspx" title="SYSTEMY P-POZ"  description="" />
+		<siteMapNode url="~/biuroweKlima.aspx" title="SYSTEMY KLIMATYZACJI"  description=""/>
+	</siteMapNode>
+			<siteMapNode url="galeria.aspx" title="GALERIA"  description=""/>
+			<siteMapNode url="bazadanych.aspx" title="BAZA DANYCH"  description="" />
+			<siteMapNode url="kontakt.aspx" title="KONTAKT"  description="" />
+  </siteMapNode>
+</siteMap>
